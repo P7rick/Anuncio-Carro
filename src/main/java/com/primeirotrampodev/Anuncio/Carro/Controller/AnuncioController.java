@@ -22,7 +22,7 @@ public class AnuncioController {
     @Autowired
     private UsuarioService usuarioService;
 
-    @GetMapping("anuncio-carro")
+    @GetMapping("/anuncio-carro")
     public Anuncio atributosAnuncio(@RequestParam("idDoUsuario") Integer idDoUsuario,
                                     @RequestParam("nomeUsuario") String nomeUsuario,
                                     @RequestParam("telefoneUsuario") String telefoneUsuario,

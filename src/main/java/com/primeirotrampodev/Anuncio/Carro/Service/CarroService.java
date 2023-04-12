@@ -11,7 +11,7 @@ import java.util.List;
 public class CarroService {
 
     @Autowired
-    CambioService cambioService;
+    private CambioService cambioService;
 
     @Autowired
     private OpcionalService opcionalService;
@@ -35,8 +35,8 @@ public class CarroService {
         carro2.setMarca("Citroen");
         carro2.setAnoModelo(2012);
         carro2.setCor("Azul");
-        carro1.setCambio(cambioService.cambio1(idCambio));
-        carro1.setOpcionalList(opcionalService.getOpcionais(opcionalIdList));
+        carro2.setCambio(cambioService.cambio1(idCambio));
+        carro2.setOpcionalList(opcionalService.getOpcionais(opcionalIdList));
 
         Carro carro3 = new Carro();
 
@@ -45,8 +45,8 @@ public class CarroService {
         carro3.setMarca("Renault");
         carro3.setAnoModelo(2016);
         carro3.setCor("Prata");
-        carro1.setCambio(cambioService.cambio1(idCambio));
-        carro1.setOpcionalList(opcionalService.getOpcionais(opcionalIdList));
+        carro3.setCambio(cambioService.cambio1(idCambio));
+        carro3.setOpcionalList(opcionalService.getOpcionais(opcionalIdList));
 
         Carro carro4 = new Carro();
 
@@ -55,8 +55,8 @@ public class CarroService {
         carro4.setMarca("Jeep");
         carro4.setAnoModelo(2022);
         carro4.setCor("Branco");
-        carro1.setCambio(cambioService.cambio1(idCambio));
-        carro1.setOpcionalList(opcionalService.getOpcionais(opcionalIdList));
+        carro4.setCambio(cambioService.cambio1(idCambio));
+        carro4.setOpcionalList(opcionalService.getOpcionais(opcionalIdList));
 
         Carro carro5 = new Carro();
 
@@ -65,8 +65,8 @@ public class CarroService {
         carro5.setMarca("CAOA");
         carro5.setAnoModelo(2023);
         carro5.setCor("Azul");
-        carro1.setCambio(cambioService.cambio1(idCambio));
-        carro1.setOpcionalList(opcionalService.getOpcionais(opcionalIdList));
+        carro5.setCambio(cambioService.cambio1(idCambio));
+        carro5.setOpcionalList(opcionalService.getOpcionais(opcionalIdList));
 
         if (idCarro.equals(1)) {
             return carro1;
